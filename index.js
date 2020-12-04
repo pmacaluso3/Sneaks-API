@@ -13,7 +13,7 @@ mongoose.Promise = global.Promise;
 });*/
 
 // Connecting to the database
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/sneakers');
+// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/sneakers');
 
 app.listen(port, function () {
   console.log(`Sneaks app listening on port `, port);
