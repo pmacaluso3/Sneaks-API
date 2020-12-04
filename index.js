@@ -1,12 +1,12 @@
-const express = require('express');
-const app = express();
-const mongoose = require('mongoose');
-require('./routes/sneaks.routes.js')(app);
+// const express = require('express');
+// const app = express();
+// const mongoose = require('mongoose');
+// require('./routes/sneaks.routes.js')(app);
 require('dotenv').config();
 const SneaksAPI = require('./controllers/sneaks.controllers.js');
 
-var port = process.env.PORT || 3000;
-mongoose.Promise = global.Promise;
+// var port = process.env.PORT || 3000;
+// mongoose.Promise = global.Promise;
 /*Sneaker.deleteMany({ }, function (err) {
   if(err) console.log(err);
   console.log("Successful deletion");
@@ -19,5 +19,5 @@ mongoose.Promise = global.Promise;
 //   console.log(`Sneaks app listening on port `, port);
 //  });
 
-module.exports = app;
+// module.exports = app;
 module.exports = SneaksAPI;
